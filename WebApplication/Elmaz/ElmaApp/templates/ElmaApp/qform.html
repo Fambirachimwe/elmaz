@@ -1,0 +1,88 @@
+{% extends 'ElmaApp/base.html' %}
+{% load staticfiles %}
+
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+
+<section  class="">
+    <div class="container">
+        <div class="content" >
+            <div class="row">
+            <div class="col-md-12 border">
+              <div class="panel panel-default" style="padding:50px;">
+                <div class="panel-title">
+                  Fill out the form to get Quote
+                </div>
+                  <br>
+                    <div class="panel-body">
+                      <form method="POST">
+                          {% csrf_token %}
+                        <div class="form-group">
+                          <label  class="form-label">Name</label>
+                          <input type="text" name="name" class="form-control form-control-line" >
+                        </div>
+                        <div class="form-group">
+                          <label  class="form-label">Surname</label>
+                          <input type="text" name="surname" class="form-control form-control-line" >
+                        </div>
+                        <div class="form-group">
+                          <label   class="form-label">Contact</label>
+                          <input type="text" name="contact" class="form-control form-control-line" >
+                        </div>
+
+                          <div class="form-group">
+                          <label   class="form-label">Email</label>
+                          <input type="email" name="email" class="form-control form-control-line" >
+                        </div>
+
+                        <div class="form-group">
+                          <label   class="form-label">Company Name</label>
+                          <input type="text" name="company_name" class="form-control form-control-line" >
+                        </div>
+
+                        <div class="form-group">
+                          <label   class="form-label">Number of Employes</label>
+                          <input type="text"  name="number_of_employees" class="form-control form-control-line" >
+                        </div>
+
+
+
+                        <div class="form-group">
+                          <label  class="form-label">Select Software</label>
+                            <div class="checkbox"><input name="xpress" type="checkbox"><label >Sage Pastel Xpress</label></div>
+                            <div class="checkbox"><input name="partner" type="checkbox"><label>Sage Pastel Partner</label></div>
+                            <div class="checkbox"><input name="evolution" type="checkbox"><label >Sage Evolution</label></div>
+                            <div class="checkbox"><input name="quickbooks" type="checkbox"><label>Quickbooks</label></div>
+                            <div class="checkbox"><input name="webdesign" type="checkbox"><label>Web design & hosting </label></div>
+                            <div class="checkbox"><input name="fix" type="checkbox"><label>Desktop/Laptops fix & repair</label></div>
+
+                            <div class="checkbox"><input name="payroll" type="checkbox"><label>Payroll</label></div>
+                            <div class="checkbox"><input name="pos" type="checkbox"><label>POS</label></div>
+                            <div class="checkbox"><input name="networking" type="checkbox"><label>Networking</label></div>
+                            <div class="checkbox"><input name="icdl" type="checkbox"><label>ICDL</label></div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="form-label">Additional Description</label>
+                          <textarea class="form-control form-control-line" name="additional-info" rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Request Quote</button>
+                      </form>
+                    </div>
+              </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}

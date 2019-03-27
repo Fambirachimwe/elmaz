@@ -1,0 +1,77 @@
+{% extends 'ElmaApp/base.html' %}
+{% load staticfiles %}
+
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+
+
+    <div class="row about-extra">
+        <div class="col-lg-5 wow fadeInUp">
+            <img src="{% static 'img/icdl1.jpg' %}" class="img-fluid" alt="" width="500px">
+        </div>
+
+        <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+            <p><span style="font-size: 20px; color: #004289;"><strong>ICDL Training </strong></span></p>
+            <p>The most desirable objective of any information system is the controlled sharing of information across that system in a way that is transparent to the users. In most cases this requires flawless interoperation of different complex systems to achieve that goal. So, whether the shared information is data, graphic, or messaging, effective connectivity through the system, must begin with an effective well-conceived architecture within the hardware and software platforms. We are well versed in the planning, installation, and administration of those underlying platforms that will support the business system.</p>
+            <p><strong>Our Course Modules:</strong></p>
+
+
+            <table class="table table-sm">
+                <ul>
+                    <tr>
+                        <td>Computer Essentials</td>
+                        <td>16Hrs</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>IT Security</td>
+                        <td>16Hrs</td>
+
+                    </tr>
+                    <tr>
+                        <td>WordProcessing(MS Word)</td>
+                        <td>16Hrs</td>
+
+                    </tr>
+                    <tr>
+                        <td>Spreadsheets(MS Excel)</td>
+                        <td>16Hrs</td>
+
+                    </tr>
+                    <tr>
+                        <td>Databases(MS Access)</td>
+                        <td>16Hrs</td>
+
+                    </tr>
+                    <tr>
+                        <td>Presentation(MS PowerPoint)</td>
+                        <td>16Hrs</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Internet & Email</td>
+                        <td>16Hrs</td>
+
+                    </tr>
+
+                </ul>
+
+
+            </table>
+           <a class="btn btn-primary" href="{% url 'ElmaApp:quote' %}" role="button">Get Quote</a>
+
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}

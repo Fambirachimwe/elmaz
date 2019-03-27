@@ -1,0 +1,69 @@
+{% extends 'ElmaApp/base.html' %}
+{% load staticfiles %}
+
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+
+<section  class="" style="padding-left:160px;">
+    <div class="container col-lg-12">
+       <br>
+        <br>
+
+       <h3><span style="font-size: 26px; color: #004289;"><strong>Computer Sales</strong></span></h3>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-lg-4">
+              <p><img title="Sage Pastel " class="img-responsive" style="width: 200px;" src="{% static 'img/desktop1.jpg' %}"></p>
+                <p><span style="font-size: 18px; color: #004289; padding:50px;"><strong>Desktops</strong></span></p>
+            </div>
+            <div class="col-lg-4">
+                <p><img title="Sage Pastel " class="img-responsive" style="width: 200px;" src="{% static 'img/pos2.jpg' %}"></p>
+                <p><span style="font-size: 18px; color: #004289; padding:50px;"><strong>POS printers</strong></span></p>
+            </div>
+            <div class="col-lg-4">
+               <p><img title="Sage Pastel " class="img-responsive" style="width: 250px; float:left;" src="{% static 'img/laptop.jpg' %}"></p>
+               <p><span style="font-size: 18px; color: #004289; padding:50px;"><strong>Laptops</strong></span></p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+
+
+            </div>
+            <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-4">
+
+            </div>
+
+        </div>
+        <br>
+        <br>
+
+        <p><strong>Our Specialty:</strong></p>
+
+        <ul>
+            <li>PC Repair</li>
+            <li>Laptop Repair</li>
+            <li>Apple Repair</li>
+            <li>Data Recovery</li>
+        </ul>
+         <a class="btn btn-primary" href="{% url 'ElmaApp:quote' %}" role="button">Get Quote</a>
+
+    </div>
+</section>
+
+
+
+
+{% endblock %}

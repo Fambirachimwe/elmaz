@@ -1,0 +1,56 @@
+{% extends 'ElmaApp/base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+
+<br><br><br><br><br>
+
+<header class="section-header">
+    <h3>ICT Consultation </h3>
+</header>
+<br><br><br>
+
+        <div class="row about-extra">
+          <div class="col-lg-6 wow fadeInUp">
+            <img src="{% static 'img/consulting.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+              <p><span style="font-size: 26px; color: #004289;"><strong>ICT Consulting Services </strong></span></p>
+              <p>El-Maz Technologies is a full service I.C.T and computer consulting company, providing web design, custom software, database development solutions etc. for our clients. Our collaborative approach and commitment to quality places us in the forefront of I T and computer consultants..</p>
+
+               <a class="btn btn-primary" href="#" role="button">Get Quote</a>
+          </div>
+
+        </div>
+
+<br><br><br><br><br>
+
+<header class="section-header">
+    <h3>Networking </h3>
+</header>
+<br><br><br>
+
+<div class="row about-extra">
+    <div class="col-lg-6 wow fadeInUp">
+        <img src="{% static 'img/network.png' %}" class="img-fluid" alt="">
+    </div>
+    <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+        <p><span style="font-size: 26px; color: #004289;"><strong>Networking Services </strong></span></p>
+        <p>The most desirable objective of any information system is the controlled sharing of information across that system in a way that is transparent to the users. In most cases this requires flawless interoperation of different complex systems to achieve that goal. So, whether the shared information is data, graphic, or messaging, effective connectivity through the system, must begin with an effective well-conceived architecture within the hardware and software platforms. We are well versed in the planning, installation, and administration of those underlying platforms that will support the business system.</p>
+        <p><strong>Our experience in networking and connectivity includes:</strong></p>
+
+        <ul>
+            <li>Internet connectivity (TCP/IP, router installation, Proxy Server)</li>
+            <li>MS SQL Server (setup, design, programming)</li>
+            <li>Linux Server</li>
+        </ul>
+         <a class="btn btn-primary" href="{% url 'ElmaApp:quote' %}" role="button">Get Quote</a>
+    </div>
+
+</div>
+
+
+
+{% endblock %}

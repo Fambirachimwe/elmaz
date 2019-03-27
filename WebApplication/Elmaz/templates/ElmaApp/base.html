@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Elmaz Technologies</title>
+   <link rel="shortcut icon" type="image/ico" href="{% static 'img/elmaz-icon.ico' %}" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+    
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+
+
+
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h1 class="text-light"><a href="#header"><span><a href="{% url 'Home' %}" class="scrollto"><img src="{% static 'img/logo6.jpg' %}" alt="" class="img-fluid"></a></span></a></h1>
+
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{% url 'Home' %}">Home</a></li>
+          <li><a href="{% url 'Home' %}">About Us</a></li>
+          <li><a href="{% url 'Home' %}">Services</a></li>
+           <li><a href="{% url 'ElmaApp:products' %}">Products</a></li>
+          <li><a href="{% url 'Home' %}">Contact Us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header><!-- #header -->
+
+
+    {% block content %}
+
+    {% endblock  %}
+
+
+
+
+ <script src="{% static 'lib/jquery/jquery.min.js' %} "></script>
+  <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'lib/mobile-nav/mobile-nav.js' %}"></script>
+  <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+
+
+</body>

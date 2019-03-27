@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title> El-Maz Technologies</title>
+  <!--<link rel="shortcut icon" type="image/jpg" href="{% static 'img/logo2.jpg' %}" />-->
+  <link rel="shortcut icon" type="image/ico" href="{% static 'img/elmaz-icon.ico' %}" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+
+        <h1 class="text-light"><a href="#header"><span><a href="#intro" class="scrollto">
+            <img src="{% static 'img/logo6.jpg' %}" alt="" class="img-fluid"></a></span></a>
+        </h1>
+
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="{% url 'ElmaApp:products' %}">Products</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header><!-- #header -->
+
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+
+    <div class="container">
+      <div class="intro-img">
+        <img src="{% static 'img/ict.png' %}" alt="" class="img-fluid">
+      </div>
+
+      <div class="intro-info">
+        <h2>We provide<br><span>solutions</span><br>for your business!</h2>
+        <div>
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="#services" class="btn-services scrollto">Our Services</a>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <br>
+  <br>
+  <br>
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" style="background-color:#d3d3d3" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3>About Us</h3>
+        </header>
+
+        <div class="row about-container" >
+          <div class="col-lg-6 content order-lg-1 order-2" style="background-color:#d3d3d3">
+              <br><br>
+              <br><br>
+              <br><br>
+            <div class="icon-box wow fadeInUp"  data-wow-delay="0.4s" style="background-color:#d3d3d3" >
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">EST. 2015 </a></h4>
+                <h6 class="title"><a href="">Our Mission </a></h6>
+              <p class="description" style="color:#00428a;">To research, educate and to drive a new era of development, growth, and productivity.</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
+            <img src="{% static 'img/ex.png' %}" class="img-fluid" alt="">
+          </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class="row about-extra">
+          <div class="col-lg-6 wow fadeInUp">
+            <img src="{% static 'img/meeting.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+            <h4 style="color:#00428a;">Executive Summary.</h4>
+            <p style="color:#00428a;">
+                EL-Maz Technologies (Pvt) Ltd is a leading Information and Communication Technology (ICT) service provider and software developer. EL-Maz
+                Technologies is a subsidiary of Pinochet Investments (Pvt) Ltd and was founded in 2015. We design, develop, support and promote software
+                (ICT) applications using integrates state of the art technology.
+            </p>
+            <p>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="row about-extra">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+            <img src="{% static 'img/hd.png' %}" class="img-fluid" alt="" style="background:cover;">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+              <br>
+              <br>
+              <br>
+            <h4 style="color:#00428a;">Corporate Philosophy.</h4>
+              <br>
+
+            <p style="color:#00428a;">
+                Our Corporate Philosophy establishes the fundamental principles of our management system. Our
+                countrywide operational performance standards translate the corporate values into specific management expectations. We
+                preserve a high level of business ethics characterised by integrity and honest in all our business actions.
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services" class="section-bg" style="background-color: rgb(7, 159, 241);">
+      <div class="container">
+
+        <header class="section-header">
+          <h3 style="color:#fff;">Services</h3>
+          <p></p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-android-contacts" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="{% url 'ElmaApp:AccountingSolutions' %}">Accounting Solutions</a></h4>
+              <p class="description"><a href="{% url 'ElmaApp:AccountingSolutions' %}">Pastel Accounting </a> </p>
+              <p class="description"><a href="{% url 'ElmaApp:AccountingSolutions' %}">Quickbooks Accounting </a> </p>
+              <p class="description"><a href="{% url 'ElmaApp:AccountingSolutions' %}">POS</a> </p>
+              <p class="description"><a href="{% url 'ElmaApp:AccountingSolutions' %}">Payroll & HR </a> </p>
+
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="fa fa-code" style="color: #e9bf06;"></i></div>
+              <h4 class="title"><a href="{% url 'ElmaApp:Development' %}">Development </a></h4>
+              <p class="description"><a href="{% url 'ElmaApp:Development' %}">Web Design & Hosting</a> </p>
+              <p class="description"><a href="{% url 'ElmaApp:Development' %}">Software Development </a> </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="{% url 'ElmaApp:SoftwareSolutions' %}">Software Solutions </a></h4>
+              <p class="description"><a href="{% url 'ElmaApp:SoftwareSolutions' %}">Anti-Virus Solutions</a> </p>
+              <p class="description"><a href="{% url 'ElmaApp:SoftwareSolutions' %}">Software Installation </a> </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="{% url 'ElmaApp:ict' %}">ICT Solutions </a></h4>
+              <p class="description"><a href="{% url 'ElmaApp:ict' %}">Network Administration</a> </p>
+              <p class="description"><a href="{% url 'ElmaApp:ict' %}">ICT Consulting </a> </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-world-outline" style="color: #d6ff22;"></i></div>
+              <h4 class="title"><a href="{% url 'ElmaApp:support' %}">Technical Support </a></h4>
+              <p class="description"><a href="{% url 'ElmaApp:support' %}">Data Recovery & system Backup</a> </p>
+              <p class="description"><a href="{% url 'ElmaApp:support' %}">Desktop, Laptops sales & repair </a> </p>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-book" style="color:#3fcdc7;"></i></div>
+              <h4 class="title"><a href="{% url 'ElmaApp:training' %}">Training </a></h4>
+              <p class="description"><a href="{% url 'ElmaApp:training' %}">ICDL Training</a> </p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" style="background-color:#d3d3d4;">
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+        </div>
+
+        <div class="row wow fadeInUp">
+
+          <div class="col-lg-6 ">
+            <div class="map mb-4 mb-lg-0">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.4227653414707!2d31.050986117990508!3d-17.830607048222496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a4e666c1c667%3A0x5872c6fea8c40c6b!2s71+Jason+Moyo+Ave%2C+Harare!5e0!3m2!1sen!2szw!4v1549522587818" width="646" height="316" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="row">
+              <div class="col-md-4 info">
+                <i class="ion-ios-location-outline"></i>
+                <p>71 Jason Moyo Ave,Francis House 1st floor,Harare</p>
+              </div>
+              <div class="col-md-5 info">
+                <i class="ion-ios-email-outline"></i>
+                <p>info@elamztechnologies.co.zw</p>
+              </div>
+              <div class="col-md-3 info">
+                <i class="ion-ios-telephone-outline"></i>
+                <p>+263773 909 629</p>
+              </div>
+            </div>
+
+            <div class="form">
+
+              <form method="POST" role="form" class="contactForm">
+                {% csrf_token %}
+
+                <div class="form-row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+
+                  <div class="form-group col-lg-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#intro">Home</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+            <!--this is a test commit-->
+
+          <div class=" col-lg-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              71 Jason Moyo Ave <br>
+              Francis House, 1st Floor<br>
+              Harare <br>
+              <strong>Phone:</strong> +263773909629<br>
+              <strong>Email:</strong> info@elmaztechnologies.co.zw<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'lib/jquery/jquery.min.js' %} "></script>
+  <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'lib/mobile-nav/mobile-nav.js' %}"></script>
+  <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

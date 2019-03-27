@@ -1,0 +1,86 @@
+{% extends 'ElmaApp/base.html' %}
+{% load staticfiles %}
+
+
+
+{% block content %}
+
+
+    <section id="about">
+        <br><br>
+
+      <div class="container">
+          <header class="section-header">
+          <h2>Development </h2>
+        </header>
+
+
+          <br><br><br>
+
+
+           <header class="section-header">
+          <h3>Software Development </h3>
+        </header>
+
+
+        <div class="row about-extra">
+          <div class="col-lg-6 wow fadeInUp">
+            <img src="{% static 'img/Custom.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+              <p><span style="font-size: 26px; color: #004289;"><strong>Custom Software Development </strong></span></p>
+              <p>We offer custom software development and consulting services to help you pull off your next project with less stress and less cost. Our team has the technology prowess to power you at every stage of your product development lifecycle, from discovery to ongoing post-launch enhancement.</p>
+                 <a class="btn btn-primary" href="{% url 'ElmaApp:quote' %}" role="button">Get Quote</a>
+          </div>
+        </div>
+          <br><br>
+          <br>
+
+           <header class="section-header">
+          <h3>Web Design and Hosting  </h3>
+        </header>
+           <br>
+
+        <div class="container">
+    <div class="row">
+        <div class="col-sm-6 display-full   css8307738_0 " style="">
+            <div class="content ">
+                    <br><br><br>
+                <!-- sage pastel xpress advantage -->
+                <div itemprop="articleBody">
+                    <div class="content-intro"><p><img title="Sage Pastel " class="img-responsive" style="width: 580px; " src="{% static 'img/webdev.png' %}"></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 display-full   css8307738_1 " style="">
+
+            <div class="content ">
+                <!-- Sage Pastel Xpress Advantage -->
+                <div itemprop="articleBody">
+                    <div class="content-intro"><p>&nbsp;</p>
+                        <p><span style="font-size: 26px; color: #004289;"><strong>Website Development </strong></span></p>
+                        <p><span style="font-size: 16px;">EL-Maz Technologies offers professional designed, custom web design services at affordable prices. We are certain you that you will get the quality designs.  Each website we build goes through careful testing to ensure it’s working great in all the top operating systems, screen sizes and browsers. We handle the management of your project and try out best to find any bugs so you don’t have to.
+                            We also ensure that all factors are considered for search engines.  We make sure all your site maps and tags are in place to allows search engines to index your site correctly, this allows your website to rank in Google as well as other search engines.
+                            </span></p>
+                         <a class="btn btn-primary" href="{% url 'ElmaApp:quote' %}" role="button">Get Quote</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <br><br>
+
+
+      </div>
+    </section><!-- #about -->
+
+
+
+
+
+
+{% endblock %}
